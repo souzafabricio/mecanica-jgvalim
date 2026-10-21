@@ -64,8 +64,8 @@ nav a:hover{color:var(--text)}
 header .btn{min-height:40px;padding:10px 16px;font-size:14px}
 
 .hero{background:var(--surface-2);border-bottom:1px solid var(--line)}
-.hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding-block:64px}
-.hero h1{font-size:clamp(34px,4.6vw,54px);margin:16px 0}
+.hero .wrap{display:grid;grid-template-columns:1fr;gap:48px;align-items:center;padding-block:64px}
+.hero h1{font-size:clamp(34px,4.6vw,54px);margin:16px 0;max-width:16em}
 .hero h1 .red{display:inline}
 .hero p{max-width:34em;font-size:17px;color:var(--text-2);margin:0 0 32px}
 .cta-row{display:flex;flex-wrap:wrap;gap:12px}
