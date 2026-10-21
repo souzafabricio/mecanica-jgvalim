@@ -47,7 +47,7 @@ h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.12;letter-spac
 
 header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--surface) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:10px}
-.logo-sm{display:block;width:112px;aspect-ratio:623/400;border-radius:8px;padding:4px 6px;background:url("../img/logo-topo.png") center/contain no-repeat content-box,var(--logo-bg)}
+.logo-sm{display:block;width:112px;aspect-ratio:623/400;background:url("../img/logo-topo.png") center/contain no-repeat}
 nav{display:flex;gap:28px;align-items:center}
 nav a{text-decoration:none;font-weight:500;font-size:15px;color:var(--text-2);transition:color .2s}
 nav a:hover{color:var(--text)}
