@@ -47,7 +47,7 @@ h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.12;letter-spac
 
 header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--surface) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:10px}
-.logo-sm{display:block;width:112px;aspect-ratio:900/578;border-radius:8px;background:var(--logo) center/contain no-repeat var(--logo-bg)}
+.logo-sm{display:block;width:112px;aspect-ratio:623/400;border-radius:8px;padding:4px 6px;background:url("../img/logo-topo.png") center/contain no-repeat content-box,var(--logo-bg)}
 nav{display:flex;gap:28px;align-items:center}
 nav a{text-decoration:none;font-weight:500;font-size:15px;color:var(--text-2);transition:color .2s}
 nav a:hover{color:var(--text)}
@@ -96,18 +96,18 @@ section{padding-block:88px}
 .head p{max-width:30em;color:var(--text-2);margin:0}
 
 .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.svc{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;gap:16px;transition:box-shadow .25s,transform .25s,border-color .25s;min-width:0}
+.svc{background:var(--ink-band);color:var(--on-band);border:1px solid var(--ink-band-2);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;gap:16px;transition:box-shadow .25s,transform .25s,border-color .25s;min-width:0}
 .svc:hover{box-shadow:var(--shadow);transform:translateY(-3px);border-color:transparent}
-.svc .ico{width:48px;height:48px;border-radius:10px;display:grid;place-items:center;background:var(--primary-soft);color:var(--primary)}
+.svc .ico{width:48px;height:48px;border-radius:10px;display:grid;place-items:center;background:var(--ink-band-2);color:#f87171}
 .svc .ico svg{width:24px;height:24px;transition:transform .5s}
 .svc:hover .ico svg{transform:rotate(90deg)}
-.svc h3{font-size:20px}
-.svc ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;color:var(--text-2);font-size:14px}
+.svc h3{font-size:20px;color:var(--on-band)}
+.svc ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;color:var(--on-band-2);font-size:14px}
 .svc li{display:flex;gap:8px}
-.svc li::before{content:"";flex:none;width:6px;height:6px;border-radius:50%;background:var(--text-3);margin-top:9px}
-.svc .sign{margin-top:auto;padding:12px;border-radius:8px;background:var(--surface-2);font-size:13px;color:var(--text-2)}
-.svc .sign b{display:block;font:500 11px/1.4 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--text-3);margin-bottom:4px}
-.svc a{font:600 14px/1 var(--body);text-decoration:none;color:var(--primary)}
+.svc li::before{content:"";flex:none;width:6px;height:6px;border-radius:50%;background:#f87171;margin-top:9px}
+.svc .sign{margin-top:auto;padding:12px;border-radius:8px;background:var(--ink-band-2);font-size:13px;color:var(--on-band-2)}
+.svc .sign b{display:block;font:500 11px/1.4 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--on-band);margin-bottom:4px}
+.svc a{font:600 14px/1 var(--body);text-decoration:none;color:#f87171}
 .svc a:hover{text-decoration:underline;text-underline-offset:4px}
 
 .scan{display:grid;grid-template-columns:auto 1fr auto;gap:24px 32px;align-items:center;padding:32px;margin-bottom:16px;border-radius:14px;background:var(--ink-band);color:var(--on-band)}
